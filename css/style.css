@@ -13,16 +13,26 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** RODAPÉ
 **** PÁGINA INICIAL
 */
-
+html,body,header,main,footer,article,section,hr,h1,h2{
+	margin:0;
+	padding:0;
+  box-sizing: border-box;	
+}
 /* VARIÁVEIS */
 :root{
-  
+--imgZise: 293px;
+--higligthZise: 77px;
+--backColor: #ccc;
+--fontFamily: Helvetica,Arial,sans-serif;
+--textColor: #262626;
 }
 
 /*BODY*/
 body{
-
+  color: #262626;
+	font-family: var(--fontFamily);	
 }
+
 
 /*TOPO*/
 header{
@@ -36,16 +46,50 @@ footer{
 
 /*PÁGINA INICIAL*/
 main{
-	
+  background: var(--backColor);
+	display:flex;
+	flex-direction: column
+}
+.profile-photo img{
+	border-radius:50%;
+	width: 13rem;
+}
+article img{
+	width: var(--imgZise)
 }
 	main .profile-content{
 
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+	}
+	main .profile-data{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width:30rem;
+	}
+	section  ul{
+		width:30rem;
+		list-style: none;
+		padding-left: 0;
+	}
+	.profile-info{
+		margin-top:16px;
 	}
 
-	main .highlighted-stories{
+	main .highlighted-stories ul{
+  width: 935px;
+	display:flex;
+  flex-direction: row;
 
 	}
-
+	.highlighted-stories img{
+		width: var(--higligthZise);
+		border-radius: 50%;
+		border-style: double;
+	}
 	main .profile-posts{
+  width: 935px;
 
 	}
