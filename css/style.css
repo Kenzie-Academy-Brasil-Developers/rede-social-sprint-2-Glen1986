@@ -139,14 +139,15 @@ h1{
 	text-align: center;
 	}
 	.profile-posts nav{
-		max-width 30rem;
-		justify-content: space-around;
+		max-width 42rem;
 	}
 	.profile-posts nav a{
 		text-decoration: none;
 		color: grey;
 		display:inline-block;
 		width:70px;
+		padding-top: 1rem;
+		margin: auto;
 	}
 	.perfil{
 		height: 100%;
