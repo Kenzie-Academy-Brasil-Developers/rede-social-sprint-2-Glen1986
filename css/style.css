@@ -108,10 +108,7 @@ h1{
 		section  ul {
 	list-style: none;
 	}
-	section  ul nav{
-		width:30rem;
-		padding-left: 0;
-	}
+
 	.profile-info{
 		margin-top:22px;
 	}
@@ -139,13 +136,13 @@ h1{
 	text-align: center;
 	}
 	.profile-posts nav{
-		max-width 42rem;
+		max-width 46rem;
 	}
 	.profile-posts nav a{
 		text-decoration: none;
 		color: grey;
 		display:inline-block;
-		width:70px;
+		width:8rem;
 		padding-top: 1rem;
 		margin: auto;
 	}
