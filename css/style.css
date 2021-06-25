@@ -20,17 +20,23 @@ html,body,header,main,footer,article,section,hr,h1,h2{
 }
 /* VARIÁVEIS */
 :root{
---imgZise: 293px;
---higligthZise: 77px;
---backColor: #ccc;
+--imgSize: 293px;
+--higligthSize: 77px;
+--backColor: #f0f0f0;
 --fontFamily: Helvetica,Arial,sans-serif;
 --textColor: #262626;
+--textWeigth: initial;
+--titleSize: 36px;
+--titleWeigth: 400;
 }
 
 /*BODY*/
 body{
   color: #262626;
-	font-family: var(--fontFamily);	
+	font-family: var(--fontFamily);
+	display: flex;
+	flex-direction:column;
+	font-weight: var(--textWeigth);
 }
 
 
@@ -41,55 +47,122 @@ header{
 
 /*RODAPÉ*/
 footer{
-
+	display:flex;
+	flex-direction: row;
+	text-decoration:none;
+	background-color: var(--backColor);
+	align-items: baseline;
+	justify-content: space-between;
+	padding: 2rem 2px 2rem 2rem;
+}
+footer nav a{
+	text-decoration: none;
+	color: rgb(0, 38, 128);
+}
+footer .copyright p{
+	color: grey;
+	text-transform: upperCase;
+	font-size:0.80rem;
 }
 
 /*PÁGINA INICIAL*/
+.container{
+	max-width: 935px;
+	display:flex;
+	flex-direction: column;
+  margin: auto;
+}
+hr{
+	color: #ccc;
+}
 main{
   background: var(--backColor);
 	display:flex;
-	flex-direction: column
+	flex-direction: column;
+}
+h1{
+	font-size: var(--titleSize);
+	font-weight: var(--titleWeigth);
+	margin-bottom: 10px
 }
 .profile-photo img{
 	border-radius:50%;
 	width: 13rem;
-}
-article img{
-	width: var(--imgZise)
+	border-radius: 50%;
+	border-style: double;
+	border-width: 8px;
+	border-color: grey;
 }
 	main .profile-content{
-
 		display: flex;
 		flex-direction: row;
 		justify-content: space-around;
+		padding: 0 2rem;
 	}
 	main .profile-data{
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		width:30rem;
+		width: 20rem;
 	}
-	section  ul{
+		section  ul {
+	list-style: none;
+	}
+	section  ul nav{
 		width:30rem;
-		list-style: none;
 		padding-left: 0;
 	}
 	.profile-info{
-		margin-top:16px;
+		margin-top:22px;
+	}
+	.profile-info h2 {
+		margin-bottom: -4px;
+		font-weight:var(--titleWeigth)
+	}
+	.profile-info li p,.link {
+  	margin: 4px 0;
 	}
 
 	main .highlighted-stories ul{
   width: 935px;
 	display:flex;
   flex-direction: row;
-
+	margin-left:1rem;
 	}
 	.highlighted-stories img{
-		width: var(--higligthZise);
+		width: var(--higligthSize);
 		border-radius: 50%;
 		border-style: double;
 	}
 	main .profile-posts{
   width: 935px;
-
+	text-align: center;
 	}
+	.profile-posts nav{
+		max-width 30rem;
+		justify-content: space-around;
+	}
+	.profile-posts nav a{
+		text-decoration: none;
+		color: grey;
+		display:inline-block;
+		width:70px;
+	}
+	.perfil{
+		height: 100%;
+		width:100%;
+		display:grid;
+		grid-template-columns: 1fr 1fr 1fr;
+	}	
+	.perfil .perfil-li_img{
+		max-width:var(--imgSize);
+		max-height:var(--imgSize);
+	}
+	.perfil-li_img img{
+	 max-width:100%;
+	 max-height:100%;
+	}
+	.perfil, ul{
+		padding-left:0;
+	}
+	
