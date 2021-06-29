@@ -42,7 +42,7 @@ body{
 
 /*TOPO*/
 header{
-	
+  border-bottom: 2px solid #ccc;	
 }
 
 /*RODAPÉ*/
@@ -134,17 +134,22 @@ h1{
 	main .profile-posts{
   width: 935px;
 	text-align: center;
+	border-top: 2px solid #ccc;
 	}
 	.profile-posts nav{
 		max-width 46rem;
+		box-sizing:border-box;
 	}
 	.profile-posts nav a{
+		position:relative;
+		top:-2px;
 		text-decoration: none;
 		color: grey;
 		display:inline-block;
 		width:8rem;
 		padding-top: 1rem;
 		margin: auto;
+		border-top: 2px solid #ccc;
 	}
 	.profile-posts nav a:hover{
 		color: black;
