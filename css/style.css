@@ -72,9 +72,6 @@ footer .copyright p{
 	flex-direction: column;
   margin: auto;
 }
-hr{
-	color: #ccc;
-}
 main{
   background: var(--backColor);
 	display:flex;
@@ -129,7 +126,7 @@ h1{
 	.highlighted-stories img{
 		width: var(--higligthSize);
 		border-radius: 50%;
-		border-style: double;
+		border: 4px double grey;
 	}
 	main .profile-posts{
   width: 935px;
