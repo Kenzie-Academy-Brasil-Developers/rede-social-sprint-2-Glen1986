@@ -165,6 +165,10 @@ h1{
 		display:grid;
 		grid-template-columns: 1fr 1fr 1fr;
 	}	
+	.perfil-li{
+		height: var(--imgSize);
+		width: var(--imgSize)
+	}
 
 	.perfil-li_img img{
 	 max-width:100%;
